@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../styles/step4.css">
+    <title>LUCKLY!</title>
+</head>
+<body>
+
+    <!-- Nav (logo) -->
+    <header>
+        <nav>
+            <h1 class="flex logo">LUCKLY</h1>
+        </nav>
+    </header>
+    <main class="flex-column">
+
+        <!-- Form card -->
+        <div class="flex-top card fade-in-1">
+
+            <h1 class="fade-in-2">What's your first name?</h1>
+            <!-- <h2 id="step3-sub" class="flex subtitle fade-in-2">Or your lucky word, if you have one.</h2> -->
+            
+            <form action="final.html" id="f-name-form">
+                <div class="input-wrapper fade-in-4">
+                    <input id="f-name-input" type="text" minlength="2" maxlength="20" placeholder="First name" required />
+                </div>
+            </form>
+                    
+        </div>
+
+        
+
+        <!-- Next step BTN -->
+        <div id="container" class="fade-in-4">
+            <button id="next-step-btn" type="submit" form="f-name-form"> 
+                <a href="final.html">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Next Step</span>
+                </a>
+            </button>
+        </div>
+
+    </main>
+    <script type="module" src="../behavior/script.js"></script>
+</body>
+</html>

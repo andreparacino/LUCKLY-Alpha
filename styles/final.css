@@ -1,0 +1,152 @@
+body {
+    overflow: hidden;
+}
+
+section.card {
+    height: 60vh;
+    width: 50vw;
+    background-color: var(--primary-color);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    min-height: 473.4px;
+    min-width: 394.5px;
+    max-height: 473.4px;
+    /* max-width: 394.5px; */
+}
+
+
+section p {
+    position: relative;
+    font-weight: bold;
+    top: -7rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.icon-light {
+    filter: invert(75%);
+    position: relative;
+    height: 1.5rem;
+    width: auto;
+    margin: .9rem;
+}
+
+.icon-dark {
+    filter: invert(40%);
+    position: relative;
+    height: 1.5rem;
+    width: auto;
+    margin: .9rem;
+}
+
+#layer1-dark {
+    color: var(--layer1-dark);
+    opacity: .8;
+}
+
+#layer2-dark {
+    opacity: .8;
+    color: var(--layer2-dark);
+    position: relative;
+    right: -2rem;
+    margin-top: -36rem;
+}
+
+#layer3-dark {
+    opacity: .8;
+    color: var(--layer3-dark);
+    position: relative;
+    left: -2rem;
+    margin-top: -36rem;
+}
+
+#layer1-light {
+    opacity: .7;
+    color: var(--layer1-light);
+}
+
+#layer2-light {
+    opacity: .7;
+    color: var(--layer2-light);
+    position: relative;
+    right: -2rem;
+    margin-top: -36rem;
+}
+
+#layer3-light {
+    opacity: .7;
+    color: var(--layer3-light);
+    position: relative;
+    left: -2rem;
+    margin-top: -36rem;
+}
+
+#letter-wrapper {
+    display: flex;
+    position: relative;
+    left: 2.75rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 50vw;
+    top: -20rem;
+}
+
+.f-letter {
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 100;
+    font-size: 1.5rem;
+}
+
+.f-letter-flip {
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 100;
+    font-size: 1.5rem;
+    transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+/* .info-card h1 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.info-card {
+    color: var(--secondary-color);
+    width: 20rem;
+    position: relative;
+    right: -34rem;
+    top: -28rem;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.5s linear; 
+    transition: all 0.5s linear;
+}
+
+#info-card-letters {
+    position: relative;
+    left: -34rem;
+    top: -41rem;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.5s linear; 
+    transition: all 0.5s linear;
+}
+
+#to-capture:hover{
+    cursor: pointer;
+}
+   
+   
+.to-capture:hover .info-card {
+visibility: visible;
+width: 20rem;
+opacity: 0.9; 
+} */

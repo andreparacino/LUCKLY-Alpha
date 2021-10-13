@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/utils.css" />
+    <link rel="stylesheet" href="../styles/step1.css" />
+    <title>LUCKLY!</title>
+  </head>
+  <body
+    id="step1-body"
+    style="
+      background-image: url('https://media.giphy.com/media/11kn6DFp9BNqWA/giphy.gif');
+    "
+  >
+    <!-- Nav (logo) -->
+    <header>
+      <nav>
+        <h1 class="flex logo">LUCKLY</h1>
+      </nav>
+    </header>
+    <main class="flex-column">
+      <!-- Form card -->
+      <div class="flex-top card fade-in-1" id="day-night-card">
+        <h1 class="fade-in-2">What do you like more?</h1>
+        <div class="form">
+          <form action=""></form>
+        </div>
+
+        <!-- Day&Night Switch -->
+        <div class="day-night-btn fade-in-4">
+          <div class="toggleWrapper">
+            <input type="checkbox" class="dn" id="dn" />
+            <label for="dn" class="toggle">
+              <span class="toggle__handler">
+                <span class="crater crater--1"></span>
+                <span class="crater crater--2"></span>
+                <span class="crater crater--3"></span>
+              </span>
+              <span class="star star--1"></span>
+              <span class="star star--2"></span>
+              <span class="star star--3"></span>
+              <span class="star star--4"></span>
+              <span class="star star--5"></span>
+              <span class="star star--6"></span>
+            </label>
+          </div>
+        </div>
+        <h1 class="hidden-h1">Got it!</h1>
+      </div>
+
+      <!-- Next step BTN -->
+      <div id="container" class="fade-in-4">
+        <button id="next-step-btn">
+          <a href="step2.html">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Next Step</span>
+          </a>
+        </button>
+      </div>
+    </main>
+    <script type="module" src="../behavior/script.js"></script>
+  </body>
+</html>

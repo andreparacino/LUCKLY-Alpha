@@ -1,0 +1,23 @@
+#step3-sub {
+    text-align: center;
+}
+
+h1.fade-in-2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.input-wrapper {
+    margin: 3rem;
+}
+
+#word-input {
+    border: none;
+    appearance: none;
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    border-radius: 0.5rem;
+  }
