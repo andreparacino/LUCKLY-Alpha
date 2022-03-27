@@ -13,7 +13,6 @@ import {
 this will provide the correct section of code to apply to each page */
 
 const path = window.location.pathname;
-
 const currentPage = path.split("/").pop();
 
 // that's an array of all pages that must be themed
@@ -25,49 +24,38 @@ const acceptedPagesArr = [
   "step4.html",
   "final.html",
 ];
-
-// gif-handler behavior section
-
-if (currentPage === "index.html") {
-  localStorage.clear();
-
-  window.addEventListener("load", setMainGif);
-}
-
-// theme handler section
-
-if (currentPage === "step1.html") {
-  localStorage.clear();
-
-  window.addEventListener("load", themeHandlerStep1);
-
-  themeSwitch.addEventListener("change", themeHandlerStep1);
-}
-
 if (acceptedPagesArr.includes(currentPage)) {
   window.addEventListener("load", themeSetter);
 }
 
-// step2 answer collector
+switch (currentPage) {
+  case "index.html":
+    // gif-handler behavior section
+    localStorage.clear();
 
-if (currentPage === "step2.html") {
-  luckyNumCollector();
-}
+    window.addEventListener("load", setMainGif);
 
-//  step3 answer collector
+  case "step1.html":
+    // theme handler section
+    localStorage.clear();
 
-if (currentPage === "step3.html") {
-  luckyWordCollector();
-}
+    window.addEventListener("load", themeHandlerStep1);
 
-// step4 answer collector
+    themeSwitch.addEventListener("change", themeHandlerStep1);
 
-if (currentPage === "step4.html") {
-  fNameCollector();
-}
+  case "step2.html":
+    // step2 answer collector
+    luckyNumCollector();
 
-// canvas creation process
+  case "step3.html":
+    //  step3 answer collector
+    luckyWordCollector();
 
-if (currentPage === "final.html") {
-  canvasCreator();
+  case "step4.html":
+    // step4 answer collector
+    fNameCollector();
+
+  case "final.html":
+    // canvas creation process
+    canvasCreator();
 }
